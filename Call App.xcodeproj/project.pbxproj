@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1B3E76B92A6F671900F1C3D8 /* Call_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3E76B82A6F671900F1C3D8 /* Call_AppApp.swift */; };
+		1B3E76B92A6F671900F1C3D8 /* Call_App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3E76B82A6F671900F1C3D8 /* Call_App.swift */; };
 		1B3E76BB2A6F671900F1C3D8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3E76BA2A6F671900F1C3D8 /* ContentView.swift */; };
 		1B3E76BD2A6F671D00F1C3D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3E76BC2A6F671D00F1C3D8 /* Assets.xcassets */; };
 		1B3E76C02A6F671D00F1C3D8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B3E76BF2A6F671D00F1C3D8 /* Preview Assets.xcassets */; };
 		1B3E76CA2A6F671D00F1C3D8 /* Call_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3E76C92A6F671D00F1C3D8 /* Call_AppTests.swift */; };
 		1B3E76D42A6F671D00F1C3D8 /* Call_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3E76D32A6F671D00F1C3D8 /* Call_AppUITests.swift */; };
 		1B3E76D62A6F671D00F1C3D8 /* Call_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3E76D52A6F671D00F1C3D8 /* Call_AppUITestsLaunchTests.swift */; };
+		1B3E76E32A71CF7000F1C3D8 /* Gmail-logo.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1B3E76E22A71CF7000F1C3D8 /* Gmail-logo.svg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		1B3E76B52A6F671900F1C3D8 /* Call App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Call App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1B3E76B82A6F671900F1C3D8 /* Call_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call_AppApp.swift; sourceTree = "<group>"; };
+		1B3E76B82A6F671900F1C3D8 /* Call_App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call_App.swift; sourceTree = "<group>"; };
 		1B3E76BA2A6F671900F1C3D8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1B3E76BC2A6F671D00F1C3D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B3E76BF2A6F671D00F1C3D8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -44,6 +45,7 @@
 		1B3E76CF2A6F671D00F1C3D8 /* Call AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Call AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B3E76D32A6F671D00F1C3D8 /* Call_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call_AppUITests.swift; sourceTree = "<group>"; };
 		1B3E76D52A6F671D00F1C3D8 /* Call_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Call_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1B3E76E22A71CF7000F1C3D8 /* Gmail-logo.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = "Gmail-logo.svg"; path = "../../../../Downloads/Gmail-logo.svg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +96,10 @@
 		1B3E76B72A6F671900F1C3D8 /* Call App */ = {
 			isa = PBXGroup;
 			children = (
-				1B3E76B82A6F671900F1C3D8 /* Call_AppApp.swift */,
+				1B3E76B82A6F671900F1C3D8 /* Call_App.swift */,
 				1B3E76BA2A6F671900F1C3D8 /* ContentView.swift */,
 				1B3E76BC2A6F671D00F1C3D8 /* Assets.xcassets */,
+				1B3E76E22A71CF7000F1C3D8 /* Gmail-logo.svg */,
 				1B3E76BE2A6F671D00F1C3D8 /* Preview Content */,
 			);
 			path = "Call App";
@@ -231,6 +234,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B3E76E32A71CF7000F1C3D8 /* Gmail-logo.svg in Resources */,
 				1B3E76C02A6F671D00F1C3D8 /* Preview Assets.xcassets in Resources */,
 				1B3E76BD2A6F671D00F1C3D8 /* Assets.xcassets in Resources */,
 			);
@@ -258,7 +262,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B3E76BB2A6F671900F1C3D8 /* ContentView.swift in Sources */,
-				1B3E76B92A6F671900F1C3D8 /* Call_AppApp.swift in Sources */,
+				1B3E76B92A6F671900F1C3D8 /* Call_App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
