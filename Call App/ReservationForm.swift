@@ -10,7 +10,8 @@ struct ReservationForm: View {
 
     var body: some View {
         Form {
-            Section(header: Text("Reservation Details")) {
+            Section(header: Text("Reservation Details")
+            ) {
                 Text("Name: \(userName)")
                     .foregroundColor(.black) // Set font color to black
                 Text("Phone Number: \(userPhoneNumber)")
@@ -33,10 +34,9 @@ struct ReservationForm: View {
                         .cornerRadius(10)
                 }
             }
-        }
-        .accentColor(.black)
-        .background(Color.clear) // Remove the background color of the Form
+        }.scrollContentBackground(.hidden)
     }
+
 
     private func makeReservation() {
         // Extract the necessary details
