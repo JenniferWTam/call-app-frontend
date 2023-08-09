@@ -23,11 +23,7 @@ struct SignUpView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding(.horizontal)
             
-            // Add more fields for other sign-up information
-            
             Button(action: {
-                // Implement sign-up logic here
-                // You can use the email and password entered by the user for sign-up
                 
             }) {
                 Text("Sign Up")
@@ -38,11 +34,9 @@ struct SignUpView: View {
                     .cornerRadius(10)
             }
             .padding(.horizontal)
-            
-            // Add more buttons or links for additional sign-up options
-            
             Spacer()
         }
         .padding()
+        .background(LinearGradient(gradient: Gradient(colors: [Color(red: 204/255, green: 239/255, blue: 252/255), Color(red: 178/255, green: 218/255, blue: 251/255)]), startPoint: .top, endPoint: .bottom))
     }
 }
