@@ -2,6 +2,7 @@
 import SwiftUI
 import MapKit
 
+
 struct PlaceListView: View {
     
     let landmarks: [Landmark]
@@ -37,6 +38,7 @@ struct PlaceListView: View {
 
 struct PlaceListView_Previews: PreviewProvider {
     static var previews: some View {
-        PlaceListView(landmarks: [Landmark(placemark: MKPlacemark())], onTap: {})
+        PlaceListView(landmarks: []) {
+        }
     }
 }

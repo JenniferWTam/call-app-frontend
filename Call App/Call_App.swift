@@ -1,6 +1,6 @@
 import SwiftUI
 
-@main
+//@main
 struct Call_AppApp: App {
 
     var body: some Scene {
