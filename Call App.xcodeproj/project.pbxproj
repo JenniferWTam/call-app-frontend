@@ -118,6 +118,7 @@
 		1B3E76AC2A6F671900F1C3D8 = {
 			isa = PBXGroup;
 			children = (
+				1BD253512A86D76700833738 /* .gitignore */,
 				1B3E76B72A6F671900F1C3D8 /* Call App */,
 				1B3E76C82A6F671D00F1C3D8 /* Call AppTests */,
 				1B3E76D22A6F671D00F1C3D8 /* Call AppUITests */,
@@ -140,7 +141,6 @@
 			children = (
 				1B1DFB1E2A86AF000080B978 /* GoogleService-Info.plist */,
 				1B1DFB1C2A86A7280080B978 /* client_51947436195-coehas5cijo3jtocmep4uqmlc873cpme.apps.googleusercontent.com.plist */,
-				1BD253512A86D76700833738 /* .gitignore */,
 				1BEAF93C2A8177FF0021EAF8 /* Models */,
 				1BB3C0762A868EBB002E8121 /* Components */,
 				1BEAF9412A81785B0021EAF8 /* Managers */,
