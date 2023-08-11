@@ -17,7 +17,7 @@ struct ContentView: View {
     private func getNearByLandmarks() {
         
         let request = MKLocalSearch.Request()
-        request.naturalLanguageQuery = search
+        request.naturalLanguageQuery = restaurantName
         
         let search = MKLocalSearch(request: request)
         search.start { (response, error) in
@@ -48,47 +48,59 @@ struct ContentView: View {
     
     
 
-        var body: some View {
-            NavigationView {
-                VStack {
-                    switch loginState {
-                    case .loggedOut:
-                        LoginForm(loginState: $loginState, email: $email, name: $name)
-                            .navigationBarItems(trailing: EmptyView())
-                    case .loggedIn(_, let userName, let userPhoneNumber):
-                        ReservationForm(userName: userName, userPhoneNumber: userPhoneNumber, partySize: $partySize, name: $name, restaurantName: $restaurantName, reservationTime: $reservationTime)
-                            .navigationBarItems(trailing: logoutButton)
-                        MapView(landmarks: landmarks)
+    var body: some View {
+        NavigationView {
+            VStack(spacing: 0) {
+                switch loginState {
+                case .loggedOut:
+                    LoginForm(loginState: $loginState, email: $email, name: $name)
+                        .navigationBarItems(trailing: EmptyView())
+                case .loggedIn(_, let userName, let userPhoneNumber):
+                    ReservationForm(userName: userName, userPhoneNumber: userPhoneNumber, partySize: $partySize, name: $name, restaurantName: $restaurantName, reservationTime: $reservationTime)
+                        .navigationBarItems(trailing: logoutButton)
+                        .frame(height: UIScreen.main.bounds.size.height / 2)
+                        .offset(y: 20)
+                        .padding(.bottom, 0)
+                    
+                    PlaceListView(landmarks: self.landmarks) {
+                        self.tapped.toggle()
+                    }
+                    .animation(.spring(), value: tapped)
+                    .offset(y: calculateOffset())
 
-                        TextField("Search", text: $search, onEditingChanged: { _ in }) {
-                            self.getNearByLandmarks()
-                        }
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding()
-                        .offset(y: 44)
-                        
-                        PlaceListView(landmarks: self.landmarks) {
-                            self.tapped.toggle()
-                        }
-                        .animation(.spring(), value: tapped)
-                        .offset(y: calculateOffset())
+                    TextField("Restaurant Name", text: $restaurantName, onEditingChanged: { _ in }) {
+                        self.getNearByLandmarks()
                     }
-                    }
-                
-                .padding()
-                .background(LinearGradient(gradient: Gradient(colors: [Color(red: 204/255, green: 239/255, blue: 252/255), Color(red: 178/255, green: 218/255, blue: 251/255)]), startPoint: .top, endPoint: .bottom))
-                .navigationBarTitle("Reservation App")
-                .navigationBarTitleDisplayMode(.inline)
-                .foregroundColor(.white)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+
+                    MapView(landmarks: landmarks)
+                        .frame(height: UIScreen.main.bounds.size.height / 4)
+
+                }
             }
-            .navigationViewStyle(StackNavigationViewStyle())
-            .onAppear(perform: {
-                UINavigationBar.appearance().backgroundColor = UIColor.clear
-                UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
-                UINavigationBar.appearance().shadowImage = UIImage()
-            })
+            .foregroundColor(.black)
+            .padding()
+            .background(
+                LinearGradient(
+                    gradient: Gradient(colors: [Color.white, Color.blue.opacity(0.5)]), // Adjust colors here
+                    startPoint: .top,
+                    endPoint: .bottom
+                )
+            )
+            .navigationBarTitle("Reservation App")
+            .navigationBarTitleDisplayMode(.inline)
+            .foregroundColor(.white)
         }
+        .navigationViewStyle(StackNavigationViewStyle())
+        .onAppear(perform: {
+            UINavigationBar.appearance().backgroundColor = UIColor.clear
+            UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+            UINavigationBar.appearance().shadowImage = UIImage()
+        })
+    }
 
+    
     private func logout() {
         loginState = .loggedOut
         name = ""
