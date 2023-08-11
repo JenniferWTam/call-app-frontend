@@ -23,6 +23,7 @@
 		1B5A2E812A778FAD004148EE /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B5A2E802A778FAD004148EE /* SignUpView.swift */; };
 		1BB3C0752A868BF7002E8121 /* SignIn_withGoogle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3C0742A868BF7002E8121 /* SignIn_withGoogle.swift */; };
 		1BB3C0782A868ED3002E8121 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB3C0772A868ED3002E8121 /* Application.swift */; };
+		1BD253522A86D76700833738 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 1BD253512A86D76700833738 /* .gitignore */; };
 		1BEAF9392A8177980021EAF8 /* MapViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEAF9382A8177970021EAF8 /* MapViews.swift */; };
 		1BEAF93B2A8177D80021EAF8 /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEAF93A2A8177D80021EAF8 /* PlaceListView.swift */; };
 		1BEAF93E2A8178150021EAF8 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BEAF93D2A8178150021EAF8 /* Landmark.swift */; };
@@ -74,6 +75,7 @@
 		1B5A2E802A778FAD004148EE /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		1BB3C0742A868BF7002E8121 /* SignIn_withGoogle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn_withGoogle.swift; sourceTree = "<group>"; };
 		1BB3C0772A868ED3002E8121 /* Application.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
+		1BD253512A86D76700833738 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		1BEAF9382A8177970021EAF8 /* MapViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViews.swift; sourceTree = "<group>"; };
 		1BEAF93A2A8177D80021EAF8 /* PlaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
 		1BEAF93D2A8178150021EAF8 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
@@ -138,6 +140,7 @@
 			children = (
 				1B1DFB1E2A86AF000080B978 /* GoogleService-Info.plist */,
 				1B1DFB1C2A86A7280080B978 /* client_51947436195-coehas5cijo3jtocmep4uqmlc873cpme.apps.googleusercontent.com.plist */,
+				1BD253512A86D76700833738 /* .gitignore */,
 				1BEAF93C2A8177FF0021EAF8 /* Models */,
 				1BB3C0762A868EBB002E8121 /* Components */,
 				1BEAF9412A81785B0021EAF8 /* Managers */,
@@ -336,6 +339,7 @@
 				1B1DFB1F2A86AF000080B978 /* GoogleService-Info.plist in Resources */,
 				1B3E76C02A6F671D00F1C3D8 /* Preview Assets.xcassets in Resources */,
 				1B1DFB1D2A86A7280080B978 /* client_51947436195-coehas5cijo3jtocmep4uqmlc873cpme.apps.googleusercontent.com.plist in Resources */,
+				1BD253522A86D76700833738 /* .gitignore in Resources */,
 				1B3E76BD2A6F671D00F1C3D8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
